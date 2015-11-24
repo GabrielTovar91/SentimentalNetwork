@@ -136,12 +136,12 @@ class BackPropagationNetwork:
 
 
 # If run as a script, create a test object
-if __name__ == "__main__":
+"""if __name__ == "__main__":
 	lvInput = np.array([[2, 2, 3, 1, 0, 0], [3, 3, 1, 0, 1, 0], [2, 1, 0, 0, 0, 1], [2, 0, 1, 3, 1, 1]])
 	lvTarget = np.array([[1], [0.00], [-1.00], [1.00]])
 	lFuncs = [None, tanh, sgm]
 
-	bpn = BackPropagationNetwork((6,3,1), lFuncs)
+	bpn = BackPropagationNetwork((4,3,1), lFuncs)
 
 	lnMax = 100000
 	lnErr = 1e-5
@@ -156,4 +156,4 @@ if __name__ == "__main__":
 	# Display Output
 	lvOutput = bpn.Run(lvInput)
 	for i in range(lvInput.shape[0]):
-		print ("Input: {0} OutPut: {1}".format(lvInput[i],lvOutput[i]))
+		print ("Input: {0} OutPut: {1}".format(lvInput[i],lvOutput[i]))"""
